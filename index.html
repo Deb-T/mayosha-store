@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mayosha</title>
+  
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container_button">
+      <label for="menu">
+        <span class="header_menu-hamburguer container_img"></span>
+      </label>
+      <ul class="menu-list">
+        <li class="menu-list_title">Maquiagem</li>
+        <li class="menu-list_item">
+          <a href="#" class="menu-list_link">Boca</a>
+        </li>
+        <li class="menu-list_item">
+          <a href="#" class="menu-list_link">Olhos</a>
+        </li>
+        <li class="menu-list_item">
+          <a href="#" class="menu-list_link">Face</a>
+        </li>
+        <li class="menu-list_title">Skincare</li>
+        <li class="menu-list_item">
+          <a href="#" class="menu-list_link">Limpeza</a>
+        </li>
+        <li class="menu-list_item">
+          <a href="#" class="menu-list_link">Tratamento</a>
+        </li>
+        <li class="menu-list_item">
+          <a href="#" class="menu-list_link">Hidratação</a>
+        </li>
+        <li class="menu-list_title">Corpo</li>
+        <li class="menu-list_item">
+          <a href="#" class="menu-list_link">Perfumes</a>
+        </li>
+        <li class="menu-list_item">
+          <a href="#" class="menu-list_link">Hidratantes</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <img src="img/logo.svg" alt="Mayosha's logo" class="container_img">
+      <h1 class="mayosha-title">Mayosha</h1>
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/user.svg" alt="Perfil" class="container_img"></a>
+      <a href="#"><img src="img/cart.svg" alt="Carrinho de compras" class="container_img"></a>
+    </div>
+  </header>
+  <section class="carousel">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/bg_img_01.jpeg" alt="Mulheres posando para a foto." class="img_carousel"></div>
+        <div class="swiper-slide"><img src="img/bg_img_02.jpg" alt="Mulher com cabelos cacheados ao vento." class="img_carousel"></div>
+        <div class="swiper-slide"><img src="img/bg_img_03.jpg" alt="Uma mão segurando um pequeno tubo de hidratante para as mãos." class="img_carousel"></div>
+    
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+      el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      }
+
+    });
+  </script>
+</body>
+</html>

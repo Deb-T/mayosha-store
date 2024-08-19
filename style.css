@@ -1,0 +1,17 @@
+@import url(styles/header.css);
+@import url(styles/carousel.css);
+
+:root {
+  --background-color: #FFFFFF;
+  --menu-list-title-color: #0C0C0C;
+  --menu-list-link-color: #404040;
+  --main-font: "Open Sans", sans-serif;
+  --mayosha-color: #6eaa8a;
+}
+
+body {
+  background: var(--background-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+}
